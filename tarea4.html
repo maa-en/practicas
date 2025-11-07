@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Switch con IF</title>
+  <script>
+    let opcion = prompt(
+      "Seleccione una opción:\n1. Saludar\n2. Verificar edad\n3. Mostrar día\n4. Calcular número\n5. Salir"
+    );
+
+    switch (opcion) {
+      case "1":
+        alert("¡Hola! Espero que tengas un gran día ");
+        break;
+
+      case "2":
+        let edad = prompt("Ingrese su edad:");
+        if (edad >= 18) {
+          alert("Sos mayor de edad.");
+        } else {
+          alert("Sos menor de edad.");
+        }
+        break;
+
+      case "3":
+        let dia = prompt("Ingrese el día de la semana:");
+        if (dia.toLowerCase() === "sábado" || dia.toLowerCase() === "domingo") {
+          alert("Es fin de semana");
+        } else {
+          alert("Es un día de semana.");
+        }
+        break;
+
+      case "4":
+        let numero = prompt("Ingrese un número:");
+        if (numero % 2 === 0) {
+          alert("El número es par.");
+        } else {
+          alert("El número es impar.");
+        }
+        break;
+
+      case "5":
+        alert("Saliendo del programa...");
+        break;
+
+      default:
+        alert("Opción no válida.");
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
