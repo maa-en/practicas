@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bucle Do While</title>
+  <script>
+    const numeroOculto = 7;
+    let intento;
+
+    do {
+      intento = prompt("Adiviná el número oculto (entre 1 y 10):");
+
+      if (intento == numeroOculto) {
+        alert("¡Felicitaciones! Adivinaste el número");
+      } else {
+        alert("Número incorrecto, intentá de nuevo.");
+      }
+
+    } while (intento != numeroOculto);
+  </script>
+</head>
+<body>
+</body>
+</html>
